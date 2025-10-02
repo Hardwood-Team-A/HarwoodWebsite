@@ -1,3 +1,5 @@
+Meeting Type: Team Meeting
+
 Attendees:
 Anna Soukhovei
 Andrew Wang
