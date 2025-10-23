@@ -1,10 +1,21 @@
 @import "tailwindcss";
 
+/* Kepler Std Semicondensed Display font */
+@font-face {
+  font-family: 'kepler-std-semicondensed-dis';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Kepler Std Semicondensed Display'), local('KeplerStd-SemicondensedDisp');
+}
+
 /* Optional: base layout */
 html, body, #root {
   height: 100%;
 }
 body {
+  font-family: kepler-std-semicondensed-dis, serif;
+  font-style: normal;
+  font-weight: 700;
   background-color: #f9fafb;
   color: #111827;
 }
