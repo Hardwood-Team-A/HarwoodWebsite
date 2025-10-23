@@ -1,0 +1,10 @@
+{
+  "name": "harwood-team-a-root",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "npm run dev --prefix Src",
+    "client": "npm run dev --prefix Src/client",
+    "server": "npm run dev --prefix Src/server"
+  }
+}
