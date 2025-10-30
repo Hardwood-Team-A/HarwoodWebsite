@@ -3,7 +3,7 @@ import logo from '../assets/harwood-logo.png'
 
 function NavBar() {
   return (
-    <nav className="bg-white border-b border-[#2c1607] w-full">
+    <nav className="sticky top-0 z-50 bg-white border-b border-[#2c1607] w-full">
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo Section */}
