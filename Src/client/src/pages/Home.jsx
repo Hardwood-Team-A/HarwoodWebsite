@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import ArtistCard from '../Components/HomePage/ArtistCard'
+import ArtistGrid from '../Components/HomePage/ArtistGrid'
 
 export default function Home() {
   const [health, setHealth] = useState(null)
@@ -40,20 +40,11 @@ export default function Home() {
   }, [])
 
   return (
-    <section className="artists p-6 lg:p-12">
-      {/* Artist Cards Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-        {artists.map((artist, index) => (
-          <ArtistCard
-            key={index}
-            name={artist.name}
-            description={artist.description}
-          />
-        ))}
-      </div>
-
+    <section>
+      <ArtistGrid artists={artists} />
+      
       {/* API Health Check (for development) */}
-      <div className="rounded border p-4 bg-white">
+      <div className="rounded border p-4 bg-white mx-6 lg:mx-12 mb-12">
         <h2 className="font-semibold mb-2">API Health</h2>
         {error && <p className="text-red-600">Error: {error}</p>}
         {health ? (
