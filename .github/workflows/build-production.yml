@@ -44,6 +44,17 @@ jobs:
         working-directory: ./Src/client
         run: npm run build
       
+      - name: Verify build output
+        run: |
+          echo "Checking if dist folder exists..."
+          if [ -d "./Src/client/dist" ]; then
+            echo "✅ dist folder found"
+            ls -la ./Src/client/dist
+          else
+            echo "❌ dist folder not found!"
+            exit 1
+          fi
+      
       - name: Configure Git
         run: |
           git config --global user.name "github-actions[bot]"
