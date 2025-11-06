@@ -10,7 +10,7 @@ export default function Home() {
       .then(setHealth)
       .catch((e) => setError(e.message))
   }, [])
-
+//adding a comment for the sake of trying my best
   return (
     <section className="p-6 space-y-4">
       <h1 className="text-4xl font-bold">Home</h1>
