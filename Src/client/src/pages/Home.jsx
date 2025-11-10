@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react'
+import "../index.css"
+import "../app.css"
 
 export default function Home() {
   const [health, setHealth] = useState(null)
@@ -26,7 +28,7 @@ export default function Home() {
     <section className="flex flex-col">
 
       {/* ===================== home section ===================== */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch mx-3 lg:mx-12 my-12">
+     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch mx-3 lg:mx-12 my-12"> 
         {/* Text Section */}
         <div className="flex flex-col justify-between">
           {/* Main Title (top-left) */}
@@ -35,7 +37,7 @@ export default function Home() {
           </h1>
 
           {/* Subtitle (bottom-right within left column) */}
-          <p className="self-end text-lg md:text-xl text-gray-800 mt-8 text-right">
+          <p className="self-end text-xl md:text-2xl lg:text-3xl text-gray-800 mt-8 text-right">
             Desenterrando futuros
           </p>
         </div>
@@ -47,11 +49,13 @@ export default function Home() {
               key={img.id}
               src={img.src}
               alt={img.alt}
-              className="w-full aspect-[3/4] h-64 object-cover rounded-2x2 shadow-lg hover:scale-120 transition-transform duration-300"
+              className="w-full aspect-[4/5] object-cover rounded-2xl shadow-lg hover:scale-110 transition-transform duration-300"
             />
           ))}
-        </div>
-      </div>
+       </div>
+    </div> 
+
     </section>
   )
 }
+
