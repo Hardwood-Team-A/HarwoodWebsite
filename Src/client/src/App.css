@@ -1,9 +1,7 @@
 #root {
-  /*messing with these setting but i don't love them at this moment, things are too tall but they do take up the whole page... a little too 
-  much of the whole page if we're being honest with ourselves*/
   width: 100%;
-  margin: 0; 
-  padding: 2rem; 
-  text-align: center;
+  /* text-align: center; */
 }
+
+/*This file changes things for the entire page*/
 
