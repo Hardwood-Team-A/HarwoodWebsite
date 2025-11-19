@@ -23,10 +23,11 @@ export default function Home() {
   }, [])
 //adding a comment for the sake of trying my best
   return (
-    <section className="min-h-screen bg-[#f5f1e8] flex flex-col">
+    /*We can change the background later to match the map right here v*/
+    <section className="min-h-screen bg-[#f5f1e8] flex flex-col"> 
       {/* Header */}
       <header className="border-b border-gray-300 bg-[#f5f1e8]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 py-6 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-12 lg:px-24 py-6 flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-3">
             <div className="w-6 h-6 bg-[#5c4033]"></div>
@@ -46,7 +47,7 @@ export default function Home() {
       </header>
 
       {/* Main Content */}
-      <div className="flex-1 max-w-7xl mx-auto px-6 lg:px-12 py-12 lg:py-20">
+      <div className="flex-1 max-w-7xl mx-auto px-12 lg:px-24 py-12 lg:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           
           {/* Text Section */}
