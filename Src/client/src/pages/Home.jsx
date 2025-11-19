@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import ArtistGrid from '../Components/HomePage/ArtistGrid'
+import Roadmap from '../Components/HomePage/Roadmap'
 
 export default function Home() {
   const [health, setHealth] = useState(null)
@@ -41,6 +42,7 @@ export default function Home() {
 
   return (
     <section>
+      <Roadmap />
       <ArtistGrid artists={artists} />
       
       {/* API Health Check (for development) */}
