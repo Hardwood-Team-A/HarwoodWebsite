@@ -57,7 +57,7 @@ export default function Home() {
       <div className="rounded border p-4 bg-white mx-6 lg:mx-12 mb-12">
         <h2 className="font-semibold mb-2">API Health</h2>
         {error && <p className="text-red-600">Error: {error}</p>}
-        {health ? (
+        {health ? ( 
           <pre className="text-sm bg-gray-100 p-2 rounded">{JSON.stringify(health, null, 2)}</pre>
         ) : (
           <p className="text-gray-600">Loading...</p>
