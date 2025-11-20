@@ -4,7 +4,7 @@ function Description() {
     return (
     <section className="p-6 lg:p-12">
         <div className = "grid grid-cols-2 gap-4">
-            <div classname="content-center">
+            <div className="mx-auto">
                 <Image url = {image1} caption = "test capion"/>
             </div>
             <div>
