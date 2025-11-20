@@ -54,27 +54,7 @@ export default function Home() {
 //adding a comment for the sake of trying my best
   return (
     /*We can change the background later to match the map right here v*/
-    <section className="min-h-screen bg-[#f5f1e8] flex flex-col"> 
-      {/* Header */}
-      <header className="border-b border-gray-300 bg-[#f5f1e8]">
-        <div className="max-w-7xl mx-auto px-12 lg:px-24 py-6 flex items-center justify-between">
-          {/* Logo */}
-          <div className="flex items-center gap-3">
-            <div className="w-6 h-6 bg-[#5c4033]"></div>
-            <div className="flex flex-col leading-tight">
-              <span className="text-[#5c4033] font-bold text-lg tracking-tight">HARWOOD</span>
-              <span className="text-[#5c4033] text-sm">Museum of Art</span>
-            </div>
-          </div>
-
-          {/* Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
-            <a href="#" className="text-gray-700 hover:text-gray-900 font-medium">Artists</a>
-            <a href="#" className="text-gray-700 hover:text-gray-900 font-medium">Roadtrip</a>
-            <a href="#" className="text-gray-700 hover:text-gray-900 font-medium">Visit</a>
-          </nav>
-        </div>
-      </header>
+    <section className="min-h-screen bg-[#f5f1e8] flex flex-col">
 
       {/* Main Content */}
       <div className="flex-1 max-w-7xl mx-auto px-12 lg:px-24 py-12 lg:py-20">
