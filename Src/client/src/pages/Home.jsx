@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import ArtistGrid from '../Components/HomePage/ArtistGrid'
+import Description from '../Components/HomePage/Description'
 import Roadmap from '../Components/HomePage/Roadmap'
 import HeroSection from '../Components/HomePage/HeroSection'
 
