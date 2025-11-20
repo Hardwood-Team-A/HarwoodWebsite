@@ -45,8 +45,12 @@ export default function Home() {
     /*We can change the background later to match the map right here v*/
     <section className="min-h-screen bg-[#f5f1e8] flex flex-col">
       <HeroSection />
-      <Roadmap />
-      <ArtistGrid artists={artists} />
+      <div id="roadtrip">
+        <Roadmap/>
+      </div>
+      <div id="artists">
+        <ArtistGrid artists={artists} />
+      </div>
       
       {/* API Health Check (for development) */}
       <div className="rounded border p-4 bg-white mx-6 lg:mx-12 mb-12">

@@ -12,6 +12,14 @@ function NavBar() {
     { to: '#visit', label: 'Visit' }
   ]
 
+  const handleScrollTo = (e, targetId) => {
+    e.preventDefault()
+    const element = document.querySelector(targetId)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
+  }
+
   return (
     <motion.nav 
       className="sticky top-0 z-50 bg-white border-b border-[#2c1607] w-full"
@@ -42,15 +50,16 @@ function NavBar() {
                 transition={{ delay: index * 0.1, duration: 0.3 }}
                 whileHover={{ y: -2 }}
               >
-                <Link 
-                  to={link.to} 
-                  className="text-sm text-gray-700 hover:text-gray-900 transition-colors relative group"
+                <a 
+                  href={link.to}
+                  onClick={(e) => handleScrollTo(e, link.to)}
+                  className="text-sm text-gray-700 hover:text-gray-900 transition-colors relative group cursor-pointer"
                 >
                   {link.label}
                   <motion.span
                     className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gray-900 group-hover:w-full transition-all duration-300"
                   />
-                </Link>
+                </a>
               </motion.div>
             ))}
           </div>
@@ -100,13 +109,16 @@ function NavBar() {
                   exit={{ opacity: 0, x: -20 }}
                   transition={{ delay: index * 0.1 }}
                 >
-                  <Link
-                    to={link.to}
-                    className="block text-gray-700 py-3 px-3 rounded-md hover:bg-gray-50 transition-colors"
-                    onClick={() => setIsOpen(false)}
+                  <a
+                    href={link.to}
+                    className="block text-gray-700 py-3 px-3 rounded-md hover:bg-gray-50 transition-colors cursor-pointer"
+                    onClick={(e) => {
+                      handleScrollTo(e, link.to)
+                      setIsOpen(false)
+                    }}
                   >
                     {link.label}
-                  </Link>
+                  </a>
                 </motion.div>
               ))}
             </div>
