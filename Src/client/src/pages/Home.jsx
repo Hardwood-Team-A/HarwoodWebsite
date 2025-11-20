@@ -46,6 +46,9 @@ export default function Home() {
     /*We can change the background later to match the map right here v*/
     <section className="min-h-screen bg-[#f5f1e8] flex flex-col">
       <HeroSection />
+      <div id="description">
+        <Description/>
+      </div>
       <div id="roadtrip">
         <Roadmap/>
       </div>
