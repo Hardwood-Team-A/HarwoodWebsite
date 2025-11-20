@@ -14,7 +14,7 @@ function NavBar() {
 
   return (
     <motion.nav 
-      className="sticky top-0 z-50 bg-(ffffef) border-b border-[#2c1607] w-full"
+      className="sticky top-0 z-50 bg-white border-b border-[#2c1607] w-full"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.3 }}
