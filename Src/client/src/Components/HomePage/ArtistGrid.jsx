@@ -1,8 +1,8 @@
 import { motion } from "framer-motion"
 import ArtistCard from './ArtistCard'
 
-function ArtistGrid({ artists }) {
-  return (
+function ArtistGrid({artists}) {
+    return (
     <section className="artists p-6 lg:p-12">
       {/* Artist Cards Grid */}
       <motion.div
