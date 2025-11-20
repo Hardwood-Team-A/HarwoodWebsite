@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import ArtistGrid from '../Components/HomePage/ArtistGrid'
+import Description from '../Components/HomePage/Description'
 import Roadmap from '../Components/HomePage/Roadmap'
 
 export default function Home() {
@@ -96,8 +97,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-
+      
       <Roadmap />
+      <Description />
       <ArtistGrid artists={artists} />
       
       {/* API Health Check (for development) */}
