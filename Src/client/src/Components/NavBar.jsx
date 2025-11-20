@@ -7,6 +7,7 @@ function NavBar() {
   const [isOpen, setIsOpen] = useState(false)
 
   const navLinks = [
+    { to: 'about', label: 'About' },
     { to: '#artists', label: 'Artists' },
     { to: '#roadtrip', label: 'Roadtrip' },
     { to: '#visit', label: 'Visit' }
