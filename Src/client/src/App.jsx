@@ -5,7 +5,6 @@ import NavBar from './Components/NavBar.jsx'
 import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import Artists from './pages/Artists.jsx'
-import Artist_Desc from './pages/Artist_Desc.jsx'
 
 function App() {
   const location = useLocation()
@@ -18,7 +17,7 @@ function App() {
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/artist" element={<Artist_Desc />} />
+          <Route path="/artist/:name" element={<Artists />} />
         </Routes>
       </AnimatePresence>
     </div>
