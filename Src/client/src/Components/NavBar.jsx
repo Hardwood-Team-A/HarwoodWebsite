@@ -22,12 +22,12 @@ function NavBar() {
 
   return (
     <motion.nav 
-      className="sticky top-0 z-50 bg-white border-b border-[#2c1607] w-full"
+      className="sticky top-0 z-50 bg-(ffffef) border-b border-[#2c1607] w-full"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.3 }}
     >
-      <div className="w-full px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-6 lg:px-8 ">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-2">
             <motion.img 
