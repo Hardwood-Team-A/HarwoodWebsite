@@ -3,6 +3,7 @@ import './App.css'
 import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import Artists from './pages/Artists.jsx'
+import Description from './pages/Description.jsx'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/artists" element={<Artists />} />
+        <Route path="/Description" element={<Description />} />
       </Routes>
     </div>
   )
