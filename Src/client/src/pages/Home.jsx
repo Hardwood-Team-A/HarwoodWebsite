@@ -109,13 +109,14 @@ export default function Home() {
                 <img
                   src={img.src}
                   alt={img.alt}
-                  className="w-full aspect-[3/4] object-cover hover:scale-105 transition-transform duration-500"
+                  className="w-full aspect-3/4 object-cover hover:scale-105 transition-transform duration-500"
                 />
               </div>
             ))}
           </div>
         </div>
-    <section>
+      </div>
+
       <Roadmap />
       <ArtistGrid artists={artists} />
       
